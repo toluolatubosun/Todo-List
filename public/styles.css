@@ -1,0 +1,65 @@
+.todo-tasks .card-title{
+    font-weight: 400 !important;
+    font-size: 35px !important;
+    padding-bottom: 10px;
+}
+
+.todo-tasks .card-action a{
+    font-weight: 500;
+    cursor: pointer !important;
+}
+
+#main-text{
+    color: #0099cc;
+    font-size: 100px;
+    font-weight: 700;
+    opacity: 0.7;
+}
+
+.trivial .card-action{
+    border-top: 2px solid rgba(160, 160, 160, 0.2) !important;
+}
+
+.important .card-action{
+    border-top: 2px solid !important;
+}
+
+.trivial .card-action a{
+    color: #0099cc !important;
+}
+
+.important, .card-action a{
+    color: #fff !important;
+}
+
+.important{
+    background-color: #0099cc !important;
+}
+
+@media only screen and (min-width: 601px) {
+    .container {
+      width: 90% !important;
+    }
+}
+
+.col.s12 > .btn-large {
+    width: 100%;
+    background-color: #0099cc;
+    opacity: 0.8;
+}
+
+.input-field input[type=text]:focus + label {
+    color: #0099cc !important;
+    opacity: 0.8;
+}
+
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #0099cc !important;
+    box-shadow: 0 1px 0 0 #0099cc !important;
+    opacity: 0.8;
+}
+
+footer p{
+    font-size: 25px;
+    text-align: center;
+}
