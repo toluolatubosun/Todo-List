@@ -48,7 +48,8 @@ export class Task implements TaskInterface{
         }else{
             todos = JSON.parse(localStorage.getItem('todos')!)
         }
-        todos.splice(todos.indexOf(this.taskObject), 1);
+        let index = todos.map((task: taskObject) => { return task.id }).indexOf(this.taskID);
+        todos.splice(index, 1);
         localStorage.setItem("todos", JSON.stringify(todos));
     }
 

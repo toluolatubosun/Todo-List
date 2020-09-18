@@ -1,5 +1,9 @@
 # TODO APP
 
+## [Check Out Live](https://todooslist.web.app/)
+
+https://todooslist.web.app/
+
 ## PROJECT SETUP
 
 > Run the following commands
@@ -61,7 +65,7 @@ npm run serve
 
 <br>
 
-## MANUALLY COMPILE TYPESCRIPT 
+## COMPILE TYPESCRIPT 
 ```
 
 npm run build
@@ -71,6 +75,38 @@ npm run build
 <br>
 
 ## FIREBASE HOSTING
+
+```
+npm install -g firebase-tools
+
+firebase login
+
+firebase init
+
+firebase serve (to test)
+
+firebase deploy
+
+```
+
+## SET UP CI 
+> After previous steps push to github
+
+> Run
+```
+firebase login:ci
+```
+
+> copy code and create repo secret FIREBASE_TOKEN
+
+> setup custom workflow
+
+add the following run code
+
+```
+	sudo npm install -g firebase-tools
+        firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
+```
 
 
 ## NOTE
